@@ -1,6 +1,7 @@
 /* Base */
 body {
   overflow-x: hidden;
+  width: 100%;
   line-height: 1.7;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 400;
