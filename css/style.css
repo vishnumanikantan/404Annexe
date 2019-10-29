@@ -1475,35 +1475,35 @@ a {
 /* Shahil Footer End */
 
 /* Bhagyashree Upcoming Events Start */
-#slider,  #slider .slide{
+/* #slider,  #slider .slide{
   width: 1500px;
   height: 33px;
 }
 #slider {
   overflow: hidden;
   margin: 0 auto;
-  font-size: 1em;
+  font-size: 1em; */
   /*background: #ffd7d1;*/
-}
+/* }
 #slider .container1 {
   position: relative;
   width: 8000px; /* Assign an insanely large width */
-  top: 0;
+  /*top: 0;
   right: 0;
   
   animation: slide-animation 25s infinite;
-}
-#slider .slide {
+} */
+/* #slider .slide {
   position: relative;
   float: left;
-  box-sizing: border-box;
+  box-sizing: border-box; */
  /* padding: 5px;*/
-}
+/* }
 #slider .slide .link
-{color:white;}
+{color:white;} */
 
 /* [ANIMATION] */
-@keyframes slide-animation {
+/* @keyframes slide-animation {
   0% {
     opacity: 0;
     right: 0;
@@ -1526,16 +1526,16 @@ a {
     opacity: 0;
     right: 400%;
   }
-}
+} */
 
 /* [DOES NOT MATTER] */
-html, body {
-  font-family: arial;
+/* html, body {
+  font-family: arial; */
   /*background: #ffe9d8;*/
-}
+/* }
 h1 {
   text-align: center;
-}
+} */
 /* Bhagyashree Upcoming Events End */
 
 /* Home page Execom Image */
