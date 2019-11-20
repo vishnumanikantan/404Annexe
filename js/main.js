@@ -330,7 +330,9 @@ jQuery(document).ready(function($) {
 	windowScrolled();
 
 });
-
+$('#jnr1').carousel({
+	interval: 10000
+  })
 $('.carousel.item').each(function(){
 	var next = $(this).next();
 	if (!next.length) {
