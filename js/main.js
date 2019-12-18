@@ -330,19 +330,43 @@ jQuery(document).ready(function($) {
 	windowScrolled();
 
 });
-$('#jnr1').carousel({
-	interval: 10000
-  })
-$('.carousel.item').each(function(){
-	var next = $(this).next();
-	if (!next.length) {
-	  next = $(this).siblings(':first');
-	}
-	next.children(':first-child').clone().appendTo($(this));
-	
-	if (next.next().length>0) {
-	  next.next().children(':first-child').clone().appendTo($(this));
-	} else {
-		$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-	}
-  });
+
+$('#carousel-1').on('slide.bs.carousel', function (e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 12;
+    var totalItems = $('.carousel-item').length;
+ 
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
+    }
+});
+
+$('#carousel-2').on('slide.bs.carousel', function (e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 12;
+    var totalItems = $('.carousel-item').length;
+ 
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
+    }
+});
