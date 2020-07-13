@@ -1339,11 +1339,17 @@ a {
   height: auto;
   margin-left: 60px;
 }
+
 .facultyContent{
   margin-left: 0px !important;
   padding: 10px;
   height: 354px;
   
+}
+.facultyContent img{
+  width: 75%;
+  height: auto;
+  margin-left: 60px;
 }
 .facultyContent p{
   font-weight: 700;
@@ -1652,10 +1658,11 @@ h1 {
 
 .feature-3 {
   position: relative;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-left: 5em; }
   .feature-3:before {
     position: absolute;
-    left: -3rem;
+    left: -2rem;
     line-height: 0;
     top: 1rem;
     font-size: 2rem;
@@ -1663,6 +1670,7 @@ h1 {
     font-family: "icomoon";
     content: "\e86c"; }
   .feature-3 h3 {
+    left:auto;
     font-size: 1.3rem; }
 
 @font-face {
@@ -1770,6 +1778,7 @@ figure.effect-lily img {
   max-width: 84%; /*none*/
 	width: -webkit-calc(100% + 10px);
   width: calc(100% + 10px);
+  height: auto;
 	opacity: 1;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
@@ -1795,7 +1804,7 @@ figure.effect-lily h2
 {
   font-size: 150%;
   background: #fff;
-  padding: 5px;
+  padding-top: -1em;
 }
 figure.effect-lily p {
 	-webkit-transform: translate3d(0,5px,0);
@@ -1810,7 +1819,8 @@ figure.effect-lily h2 {
 figure.effect-lily p {
 	color: rgb(255, 255, 255);
   opacity: 0;
-  font-size: 100%;
+  padding-top: -3em;
+  font-size: 70%;
   font-weight: 700;
 	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
 	transition: opacity 0.2s, transform 0.35s;
@@ -1837,33 +1847,37 @@ figure.effect-lily:hover p {
 	-webkit-transition-duration: 0.35s;
 	transition-duration: 0.35s;
 }
-
 figure.effect-life img {
-  max-width: none;
+  max-width: 84%; /*none*/
 	width: -webkit-calc(100% + 10px);
   width: calc(100% + 10px);
+  height: auto;
 	opacity: 1;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-10px,0, 0);
-  transform: translate3d(0,-20px,0);
-  height: 5cm;
+	-webkit-transform: translate3d(-20px,0, 0);
+  transform: translate3d(0,-30px,0);
+
 }
 figure.effect-life figcaption {
-	text-align: left;
+	text-align: center;/*left*/
 }
 
 figure.effect-life figcaption > div {
 	position: absolute;
-	bottom: 0;
+	bottom: 10px;
 	left: 0;
-	padding: 2em;
+  padding: 2em;
+  padding-right: 70px;
 	width: 100%;
-	height: 60%;
+	height: 50%;
 }
 
-figure.effect-life h2{
+figure.effect-life h2
+{
   font-size: 150%;
+  background: #fff;
+  padding-top: -1em;
 }
 figure.effect-life p {
 	-webkit-transform: translate3d(0,5px,0);
@@ -1876,19 +1890,21 @@ figure.effect-life h2 {
 }
 
 figure.effect-life p {
-  color: rgb(0, 0, 0);
-  font-size:75%;
+	color: rgb(255, 255, 255);
+  opacity: 0;
+  padding-top: -3em;
+  font-size: 70%;
   font-weight: 700;
-	opacity: 0;
 	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
 	transition: opacity 0.2s, transform 0.35s;
 }
 
-figure.effect-life:hover img{
+figure.effect-life:hover img {
 	opacity: 0.3;
 }
-figure.effect-life:hover p{
+figure.effect-life:hover p {
   opacity: 1;
+  color: #000;
 }
 
 figure.effect-life:hover img,
@@ -1904,6 +1920,7 @@ figure.effect-life:hover p {
 	-webkit-transition-duration: 0.35s;
 	transition-duration: 0.35s;
 }
+
 
 /************************/
 /* More button at front page*/
@@ -1953,7 +1970,7 @@ figure.effect-life:hover p {
   .carousel-inner .carousel-item-prev.carousel-item-right {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 20;
     z-index: -1;
     display: block;
     visibility: visible;
