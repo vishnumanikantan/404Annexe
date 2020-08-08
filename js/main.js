@@ -335,7 +335,8 @@ jQuery(document).ready(function($) {
 
 $('#web').on('slide.bs.carousel', modCarousel);
 $('#junior').on('slide.bs.carousel', modCarousel);
-
+$('#previous').on('slide.bs.carousel', modCarousel);
+$('#upcoming').on('slide.bs.carousel', modCarousel);
 function modCarousel (e) {
 
     var $e = $(e.relatedTarget),
